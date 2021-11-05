@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="//platform-api.sharethis.com/js/sharethis.js#property=5c637205338ffe0011030e1d&product=inline-share-buttons"
+      async="async"
+    ></script>
+    <script>
+      (function (document) {
+        var shareButtons = document.querySelectorAll(
+          ".st-custom-button[data-network]"
+        );
+        for (var i = 0; i < shareButtons.length; i++) {
+          var shareButton = shareButtons[i];
+
+          shareButton.addEventListener("click", function (e) {
+            var elm = e.target;
+            var network = elm.dataset.network;
+            console.log("share click: " + network);
+          });
+        }
+      })(document);
+    </script>
+  </head>
+  <body>
+    <div class="fuel-saving-calculator custom-template bootstrap-iso">
+      <h1 class="fuel-save-heading"> How much CNG saves you ? </h1>
+      <h2 class="fuel-save-message"> 
+        If you drive 
+        <input type="text" class="form-control" id="km-per-day" aria-describedby="KM per day" placeholder="">
+        <span class="form-control-span km-per-day-value">
+          100
+        </span> 
+        km daily with a mileage of 
+        <input type="text" class="form-control" id="mileage" aria-describedby="mileage of your car" placeholder="">
+        <span class="form-control-span mileage-value">
+          15
+        </span> 
+        km on your car. With a price of &#8377
+        <input type="text" class="form-control" id="petrol-price" aria-describedby="petrol price per liter" placeholder="">
+        <span class="form-control-span petrol-price-value">
+          73
+        </span> for petrol and &#8377
+        <input type="text" class="form-control" id="cng-price" aria-describedby="CNG price per kg" placeholder="">
+        <span class="form-control-span cng-price-value">
+          53
+        </span> 
+        for #CNG, you can save up to 
+        <span class="price per-day-saving"> 
+          226
+        </span> daily and  
+        <span class="price per-month-saving"> 
+          7980
+        </span> 
+        monthly with CNG as low as  
+        <span class="price cng-price-per-km">2.21</span>/km. 
+      </h2>
+      <div class="button-list" > 
+        <span  data-network="whatsapp" class="st-custom-button" st_title="" > Share this </span>  
+      </div>
+   </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

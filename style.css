@@ -1,0 +1,107 @@
+div#contentBlock605170240:before {
+  content: url(https://semanticscripting.com/new-badge-mobile.png);
+  position: absolute;
+}
+
+@media (min-width: 1024px) {
+  div#contentBlock605170240:before {
+    content: url(https://semanticscripting.com/new.png);
+    position: absolute;
+  }
+}
+
+.st-custom-button[data-network] {
+  background-color: #9eec46;
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}
+
+.fuel-save-heading {
+  text-align: center;
+  font-family: Roboto;
+}
+.fuel-saving-calculator {
+  background: #fff;
+}
+.fuel-save-message {
+  text-align: center;
+
+  @media (min-width: 1280px) {
+    font-size: 45px;
+    line-height: 80px;
+  }
+  font-size: 30px;
+  line-height: 50px;
+  color: rgb(149, 149, 149);
+}
+
+.button-list {
+  float: right;
+}
+
+.form-control-span {
+  display: none;
+}
+
+.fuel-save-message .price {
+  color: #fff;
+}
+
+.fuel-saving-calculator .form-group label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fuel-saving-calculator .form-control {
+  width: 150px;
+  font-size: 30px;
+  height: 40px;
+  text-align: center !important;
+  display: inline;
+  padding: 0px !important;
+  @media (min-width: 1280px) {
+    height: 50px;
+    font-size: 45px;
+  }
+  border: none;
+  border-style: none;
+  border-radius: 0 !important;
+  background: #fcf9df !important;
+  color: #333333;
+  transition: none;
+}
+
+/* .fuel-saving-calculator .price {
+            font-size:40px;
+            font-weight: bold;
+          } */
+
+.fuel-saving-calculator .results h2 {
+  font-size: 20px;
+}
+
+.fuel-saving-calculator .results {
+  text-align: center;
+}
+
+.fuel-saving-calculator .results .result-block {
+  color: #fff;
+  border: 1px solid #333333;
+  background: #333333;
+}
+
+.fuel-saving-calculator .results .per-month-saving,
+.fuel-saving-calculator .results .per-day-saving {
+  background-color: #8bc249;
+  border: 1px solid #8bc249;
+}
+.per-day-saving,
+.per-month-saving,
+.cng-price-per-km {
+  background-color: rgb(139, 194, 73);
+  padding: 0 10px;
+  color: #fff;
+}

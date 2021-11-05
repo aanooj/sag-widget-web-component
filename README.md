@@ -1,2 +1,3 @@
-# sag-widget-web-component
-Created with CodeSandbox
+# sag-widget
+
+Widget component to inject UI into SAG website
